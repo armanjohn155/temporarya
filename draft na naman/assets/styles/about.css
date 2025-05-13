@@ -1,0 +1,23 @@
+#hero-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+}
+
+.hero-image img {
+    padding-right: 100px;
+  width: 400;
+  height: 800px;
+}

@@ -3,11 +3,11 @@ h1{
     text-align: center;
 }
 .services-content{
-    padding-top: 25px;
-    padding-left: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+    padding-left: 134px;
 }
 .card{
     width: 80%;
@@ -15,7 +15,6 @@ h1{
     padding-top: 50px;
 }
 .card-content{
-    radius: 10px;
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -50,4 +49,13 @@ h1{
 .layer:hover h3{
     bottom: 49%;
     opacity:1;
+}
+@media(max-width:700px){
+    .services-content{
+    justify-content: center;
+    gap: 20px;
+    
+    flex-direction:column;
+    }
+   
 }
