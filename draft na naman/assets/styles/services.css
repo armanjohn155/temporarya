@@ -1,44 +1,58 @@
-h1{
-    padding-top: 50px;
+/* Full page background */
+body {
+    font-family: 'Chelsea Market', cursive;
+    background-color: #fffdd0; /* Peach color */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.services-title{
+    background-color: #fffdd0;
+    padding-top: 100px;
     text-align: center;
 }
-.services-content{
+.services{
     display: flex;
-    flex-direction: row;
-    gap: 32px;
-    align-items: center;
-    padding-left: 134px;
+    justify-content: center; 
+    align-items: center;     
+    gap: 20px;               
+    flex-wrap: wrap;         
+    padding: 20px;
+    padding-top: 20px;
+    gap: 70px;
 }
-.card{
-    width: 80%;
-    margin: auto;
-    padding-top: 50px;
-}
-.card-content{
+.services-col{
     flex-basis: 32%;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+    
 }
+.services-col img{
+    width: 300px;
+    height: 400px;
+    display: block;
+}
+
 .layer{
     background: transparent;
-    height: 450px;
     width: 300px;
+    height: 400px;
     position: absolute;
     top: 0%;
     left: 0%;
     transition: 0.8s;
 }
 .layer:hover{
-    background: rgba(255, 192, 203, 0.521);
+    background: #ffdab9;
 }
 .layer h3{
-    text-align: center;
-    width: 100%;
-    font-weight: 500;
+    white-space: nowrap;
+    font-weight: 50;
     color: rgb(36, 18, 1);
-    font-size: 26px;
+    font-size: 20px;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -51,11 +65,27 @@ h1{
     opacity:1;
 }
 @media(max-width:700px){
-    .services-content{
-    justify-content: center;
-    gap: 20px;
-    
-    flex-direction:column;
+    .services-col{
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
     }
-   
+    .services-title{
+        padding-bottom: 20px;
+    }
+    .services{
+        gap: 10px;
+        padding-top: 50px;
+        text-align: center;
+    }
+    .services-col img{
+        width: 250px;
+        height: 350px;
+    }
+    .layer h3 {
+        text-align: center;
+        width: 100%;
+    }
 }
+   
